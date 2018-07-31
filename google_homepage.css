@@ -13,14 +13,43 @@ header {
     position: fixed;
     width: 100%;
     text-align: right;
-    word-spacing: 0.5em;
-    right: 10px;
+    word-spacing: 0.8em;
+    right: 20px;
 
 }
 
 header nav li, footer nav li {
     display: inline-block;
     position: relative;
+}
+
+#squares {
+    width: 19px;
+    height: 16px;
+    opacity: 0.7;
+    position: relative;
+    top: 3px;
+}
+
+#sign_in {
+    height: 32px;
+    width: 72px;
+    color: #ffffff;
+    background: rgb(24, 136, 241);
+    border: 1px solid;
+    font-size: 13px;
+    border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -1px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#sign_in:active {
+    filter: brightness(80%);
 }
 
 .logo {
@@ -30,7 +59,7 @@ header nav li, footer nav li {
     top: 200px;
 }
 
-img {
+#logoimg {
     width: 275px;
     height: 95px;
 }
@@ -38,50 +67,65 @@ img {
 .search, .buttons {
     text-align: center;
     position: relative;
-    top: 235px;
+    top: 230px;
 }
 
 .search input {
-    width: 600px;
-    height: 40px;
-    border: 1px solid rgba(223, 221, 221, 0.54);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24)
+    width: 580px;
+    height: 45px;
+    border: 0.1px solid rgba(223, 221, 221, 0.54);
+    box-shadow: 0 0.5px 3px 0 rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-size: 16px;
 }
 
 .search input:hover {
-    box-shadow: 1px 3px 3px 0px rgba(0,0,0,0.24)
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.15), -1px -1px 3px 0px rgba(0,0,0,0.15);
+    border-radius: 1px;
+}
+
+.search input:focus {
+    box-shadow: 1px 3px 3px 0px rgba(0,0,0,0.15), -1px -1px 3px 0px rgba(0,0,0,0.15);
+    border-radius: 1px;
 }
 
 .buttons {
     word-spacing: 5px;
 }
 
-#google_search:hover {
-    opacity: 1;
-    border: 1px solid black;
+#google_search:hover, #lucky:hover {
+    filter: brightness(100%);
+    border: 1px solid rgba(223, 221, 221, 0.9);
+    background-color: rgba(223, 221, 221, 0.3);
+    color: black;
 }
 
 .buttons input {
     height: 35px;
-    width: 125px;
+    width: 135px;
     position: relative;
     top: 25px;
-    font-weight: 530;
-    color: rgba(0, 0, 0, 0.54);
-    background: rgba(223, 221, 221, 0.54);
-    border: 1px solid rgba(223, 221, 221, 0.541);
-    font-size: 79%;
+    color: #757575;
+    background: rgba(223, 221, 221, 0.5);
+    border: 1px solid rgba(238, 238, 238, 0.541);
+    font-size: 13px;
     border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #lucky {
-    width: 140px;
+    width: 150px;
 }
 
 footer {
     position: fixed;
     width: 100%;
-    word-spacing: 1.5em;
+    word-spacing: 1.4em;
     display: inline-block;
     bottom: 0;
     line-height: 40px;
@@ -89,7 +133,7 @@ footer {
 }
 
 footer ul {
-    background: rgba(223, 221, 221, 0.54);
+    background: rgba(223, 221, 221, 0.5);
     margin: 0;
 }
 
@@ -97,16 +141,34 @@ li:hover {
     text-decoration: underline;
 }
 
+li.sign:hover {
+    text-decoration: none;
+}
+
 span {
     float: right;
     position: relative;
-    right: 40px;
+    right: 30px;
 }
 
 li {
-    font-size: 85%;
+    font-size: 80%;
 }
 
 footer ul li {
-    color: rgba(37, 37, 37, 0.54);
+    color:  #757575;
 }
+
+p {
+    position: relative;
+    text-align: center;
+    top: 270px;
+    font-size: 80%;
+}
+ a {
+    text-decoration: none;
+ }
+
+ a:hover {
+     text-decoration: underline;
+ }
