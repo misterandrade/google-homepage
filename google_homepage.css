@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background: white;
+    font-family: "Arial", sans-serif;
+    color: black;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    word-spacing: 0.5em;
+    right: 10px;
+
+}
+
+header nav li, footer nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.logo {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 200px;
+}
+
+img {
+    width: 275px;
+    height: 95px;
+}
+
+.search, .buttons {
+    text-align: center;
+    position: relative;
+    top: 235px;
+}
+
+.search input {
+    width: 600px;
+    height: 40px;
+    border: 1px solid rgba(223, 221, 221, 0.54);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24)
+}
+
+.search input:hover {
+    box-shadow: 1px 3px 3px 0px rgba(0,0,0,0.24)
+}
+
+.buttons {
+    word-spacing: 5px;
+}
+
+#google_search:hover {
+    opacity: 1;
+    border: 1px solid black;
+}
+
+.buttons input {
+    height: 35px;
+    width: 125px;
+    position: relative;
+    top: 25px;
+    font-weight: 530;
+    color: rgba(0, 0, 0, 0.54);
+    background: rgba(223, 221, 221, 0.54);
+    border: 1px solid rgba(223, 221, 221, 0.541);
+    font-size: 79%;
+    border-radius: 2px;
+}
+
+#lucky {
+    width: 140px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    word-spacing: 1.5em;
+    display: inline-block;
+    bottom: 0;
+    line-height: 40px;
+    display: inline-block;
+}
+
+footer ul {
+    background: rgba(223, 221, 221, 0.54);
+    margin: 0;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+span {
+    float: right;
+    position: relative;
+    right: 40px;
+}
+
+li {
+    font-size: 85%;
+}
+
+footer ul li {
+    color: rgba(37, 37, 37, 0.54);
+}
